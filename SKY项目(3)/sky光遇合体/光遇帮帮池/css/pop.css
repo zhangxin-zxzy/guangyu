@@ -1,0 +1,188 @@
+.pop {
+    width: 1069px;
+    height: 735px;
+    background: url('../img/pop_bg_04620e9.png') no-repeat;
+    position: fixed;
+    z-index: 9999;
+    left: 50%;
+    top: 50%;
+    margin: -367.5px 0 0 -534.5px;
+    display: none;
+}
+
+.pop a.close {
+    width: 67px;
+    height: 63px;
+    background: url('../img/close1_e564289.png') no-repeat;
+    display: block;
+    position: absolute;
+    top: 100px;
+    right: 40px;
+}
+
+.pop a.close i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -20px;
+    background: url('../img/close2_8884f96.png') no-repeat;
+    display: block;
+    width: 40px;
+    height: 40px;
+    -webkit-transition: all ease .3s;
+    -moz-transition: all ease .3s;
+    -ms-transition: all ease .3s;
+    transition: all ease .3s;
+}
+
+.pop a.close i:hover {
+    transform: rotateZ(90deg)
+}
+
+.login .tit {
+    width: 110px;
+    height: 60px;
+    background: url('../img/login_tit_d773f53.png') no-repeat;
+    margin: 180px 0 15px 270px;
+}
+
+.login .login_con {
+    width: 320px;
+    height: 255px;
+    margin-left: 160px;
+    position: relative;
+}
+
+.login-wrap #phone {
+    width: 260px;
+    height: 44px;
+    background-color: rgb(11, 19, 46);
+    margin: 0 20px;
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid rgb(80, 132, 203);
+    border-radius: 10px;
+    font-weight: bold;
+    text-indent: 5px;
+}
+input::placeholder{
+    color: beige;
+}
+.login-wrap .huadong{
+    width: 220px;
+    height: 44px;
+    background-color: rgb(11, 19, 46);
+    margin: 10px 30px;
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid rgb(80, 132, 203);
+    font-weight: bold;
+    text-indent: 5px;
+    line-height: 44px;
+}
+.login-wrap .huadong i {
+    
+    width: 44px;
+    height: 44px;
+    background-color: #fff;
+    float: left;
+}
+.login-wrap .huadong i img {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 10px auto;
+}
+.login-wrap .yzm {
+    width: 240px;
+    height: 44px;
+    background-color: rgb(11, 19, 46);
+    margin: 10px 30px;
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid rgb(80, 132, 203);
+    font-weight: bold;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.login-wrap .yzm input{
+    float: left;
+    width: 50%;
+    height: 42px;
+    font-size: 14px;
+    text-indent: 5px;
+    background-color: rgb(11, 19, 46);
+    border: none;
+    color: #fff;
+}
+.login-wrap .yzm a{
+    float: right;
+    width: 49%;
+    /* height: 42px; */
+    text-align: center;
+    line-height: 42px;
+    color: #fff;
+    border-left:1px solid rgb(80, 132, 203);
+}
+.login-wrap #dl {
+    display: block;
+    width: 250px;
+    height: 44px;
+    background-color: rgb(80, 132, 203);
+    margin: 0 20px;
+    font-size: 18px;
+    color: #fff;
+    border: 1px solid rgb(80, 132, 203);
+    border-radius: 10px;
+
+    text-align: center;
+    line-height: 44px;
+}
+#wenti {
+    float: left;
+    font-size: 12px;
+    margin-left: 20px;
+    margin-top: 10px;
+    color: rgb(113, 119, 130);    
+}
+#zhuche {
+    float: right;
+    font-size: 12px;
+    margin-right:40px;
+    margin-top: 10px;
+    color: rgb(113, 119, 130);    
+}
+
+.poprule .cont {
+    margin-top: 120px;
+    width: 430px;
+    margin-left: 240px;
+}
+
+.poprule .t2 {
+    width: 211px;
+    height: 60px;
+    margin: 0 auto 20px;
+    background: url('../img/活动规则.png') no-repeat;
+}
+
+
+.poprule p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    color: #fff;
+    text-align: justify;
+}
+
+.poprule .cont .spc {
+    color: #fff;
+    padding: 0 20px;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    background: #327ad1;
+    line-height: 30px;
+    margin-bottom: 10px;
+}

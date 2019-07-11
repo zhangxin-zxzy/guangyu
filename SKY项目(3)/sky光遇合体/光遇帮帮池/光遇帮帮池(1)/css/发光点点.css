@@ -1,0 +1,282 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* html,
+        body {
+            width: 100%;
+            height: 100%;
+        } */
+
+        .shoneStar {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+
+            /* display: none; */
+            /* display: inline-block; */
+            opacity: 0;
+        }
+
+        li,
+        i {
+            list-style: none;
+        }
+
+        /* 隐藏的 */
+        .yincang {
+            width: 1240px;
+            height: 100%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .da {
+            width: 1200px;
+            height: 520px;
+            margin: 0 auto;
+            top: 20%;
+            position: relative;          
+        }
+
+        .xiao {
+            width: 400px;
+            height: 520px;
+            position: absolute;
+            top: 10px;
+        }
+
+        .xiao:nth-child(1) {
+            left: -400px;
+        }
+
+        .xiao:nth-child(2) {
+            left: 0;
+        }
+
+        .xiao:nth-child(3) {
+            left: 400px;
+        }
+
+        .xiao:nth-child(4) {
+            left: 800px;
+        }
+
+        .xiao:nth-child(5) {
+            left: 1200px;
+        }
+
+        .xiao:nth-child(6) {
+            left: 1600px;
+        }
+
+        /* .bianda {
+            z-index: 1;
+        } */
+
+        .xiao ul {
+            position: relative;
+            display: block;
+            list-style: none;
+            transform: scale(.6);
+        }
+
+        .ul1,
+        .ul4 {
+            width: 300px;
+            height: 400px;
+            margin: 40px auto;
+            background: url('../imges/pan1_2c10d42.png') no-repeat center;
+            background-size: contain;
+           
+        }
+
+        .ul2,
+        .ul5 {
+            width: 488px;
+            height: 438px;
+            margin-top: 40px;
+            margin-left: -42px;
+            background: url('../imges/pan2_4e45c33.png') no-repeat center;
+            background-size: contain;
+  
+        }
+
+        .ul3,
+        .ul6 {
+            width: 315px;
+            height: 466px;
+            margin: 40px auto;
+            background: url('../imges/pan3_8481c58.png') no-repeat center;
+            background-size: contain;
+        }
+
+
+        .ponint {
+            width: 20px;
+            height: 20px;
+            border-radius: 10px;
+            position: absolute;
+            background: url('../imges/ponint_a8c36da.png') center;
+            background-size: contain;
+            cursor: pointer;
+        }
+
+        .bounce {
+            animation: myHeartWillGoOn 1s infinite alternate;
+        }
+
+        .largen {
+           animation: zuizhongdaxiao .5s linear forwards;
+        }
+
+        @keyframes zuizhongdaxiao {
+            from {}
+
+            to{
+                transform: scale(4)
+            }
+        }
+
+        @keyframes myHeartWillGoOn {
+
+            from {}
+
+            to {
+                transform: scale(1.5);
+            }
+        }
+
+        .zoom {
+            animation: boxChange 1s linear 1 forwards;
+            /* transform: scale(1); */
+        }
+
+        @keyframes boxChange {
+
+            from {}
+
+            to {
+                transform: scale(1);
+            }
+        }
+
+        #prve {
+            width: 68px;
+            height: 68px;
+            background: url('../imges/btn-prev_fda7fb9.png');
+            position: absolute;
+            left: 30px;
+            top: 50%;
+            margin-top: -34px;
+        }
+
+        #next {
+            width: 68px;
+            height: 68px;
+            background: url('../imges/btn-next_620ab98.png');
+            position: absolute;
+            right: 30px;
+            top: 50%;
+            margin-top: -34px;
+        }
+
+        .label {
+            width: 370px;
+            height: 270px;
+            padding: 30px;
+            font-size: 16px;
+            color: #ffffff;
+            position: absolute;
+            background: url('../imges/box_5b91215.png') no-repeat center;
+            background-size: contain;
+            display: none;
+        }
+
+        .tou {
+            width: 90%;
+            height: 30px;
+            margin: 20px auto 10px;
+            border-bottom: #ffffff 2px solid;
+        }
+
+        .label span {
+            display: block;
+            width: 90%;
+            margin: 0 auto;
+        }
+        .zan {
+            width: 120px;
+            height: 45px;
+            line-height: 45px;
+            margin: 30px auto 0;
+            border-radius: 10px;
+            background-color:#001aff;
+            text-align: center;
+        }
+
+        .cut {
+            width: 180px;
+            height: 35px;
+            border: #ffffff 2px solid;
+            border-radius: 10px;
+            position: absolute;
+            top: 18%;
+            left: 50%;
+            text-align: center;
+            line-height: 100%;
+            margin-left: -80px;
+            color: #ffffff;
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+        .cut li {
+          width: 50%;
+          height: 100%;
+          float: left;
+          line-height: 31px;
+        }
+        .cut li:first-child {
+            color: hsl(199, 100%, 50%);
+         
+        }
+        .cut li:nth-of-type(2){
+            border-radius: 10px;
+            background-color: hsl(202, 100%, 50%);
+        }
+        .cut li:hover:nth-of-type(2){
+            background-color: #fff;
+            color: hsl(199, 100%, 50%);
+
+        }
+
+        .cut div {
+            position: absolute;
+            left: 210px;
+            top: 10px;
+            width: 70px;
+            height: 20px;
+        }
+        .cut i {
+            display: block;
+            width:15px;
+            height: 17px;
+            float: left;
+            background: url('../imges/change_58c7af6.png') no-repeat;
+            background-size: contain;
+        }
+        .cut i:hover{
+            animation: qiehuan .2s 1 linear forwards;
+        }
+
+        @keyframes qiehuan {
+            form{}
+
+            to {
+                transform: rotateZ(180deg)
+            }
+        }
+

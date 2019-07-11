@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 
+        JS原生里：
+            appendChild：添加子元素到最后
+            insertBefore：添加子元素在某个子元素的前面
+
+                ul.insertBefore：
+                        参数1：新元素
+                        参数2：在哪个元素前面
+
+        jQuery里：
+            append() 添加子元素到末尾
+            prepend() 添加子元素到最前面
+            
+            before()  插入到某个元素的前面
+            after() 插入到某个元素的后面
+
+            appendTo() 自己找到父元素，再添加到末尾
+            prependTo() 自己找到父元素，再添加到最前面
+
+        建议一些常用的元素，就先找出来用变量保存
+     -->
+</head>
+<body>
+    <input type="button" value="append添加" id="btn1">
+    <input type="button" value="prepend添加到第一个" id="btn2">
+    <input type="button" value="替换元素到某个子元素的前面" id="btn3">
+    <input type="button" value="替换元素到某个子元素的后面" id="btn4">
+
+    <input type="button" value="自己找到父元素再插入到后面" id="btn5">
+    <input type="button" value="自己找到父元素再插入到最前面" id="btn6">
+
+    <ul>
+        <li>隔壁老王1</li>
+        <li>隔壁老王2</li>
+        <li>隔壁老王3</li>
+        <li id="li4">隔壁老王4</li>
+        <li>隔壁老王5</li>
+    </ul>
+
+    <script src="./jquery-1.12.4.min.js"></script>
+    <script>
+
+        // 从效率的角度而言，一些已经存在的常用的元素，建议先找出来用变量保存
+        var $ul = $('ul');
+
+        $('#btn1').click(function(){
+
+            $res = $('<li>append的新元素</li>');
+            $ul.append($res);
+
+        });
+
+
+        $('#btn2').click(function(){
+
+            $res = $('<li>prepend的新元素</li>');
+            $ul.prepend($res);
+        })
+
+        // 添加子元素到某个子元素的前面
+        $('#btn3').click(function(){
+
+            $res = $('<li>前面的li</li>');
+
+            // before在这里不是用父元素来调用，而是直接用兄弟元素调用的
+            // 把$res添加到id为li4的li前面
+            $('#li4').before($res);
+        })
+
+
+        $('#btn4').click(function(){
+
+            $res = $('<li>后面的li</li>');
+            // 把$res添加到id为li4的后面
+            $('#li4').after($res);
+        })
+
+
+        $('#btn5').click(function(){
+
+            // $res = $('<li>新的li</li>');
+            // // 把$res加到哪个父元素上去
+            // $res.appendTo($ul);
+
+            // 可以链式编程
+            $('<li>新的li</li>').appendTo($ul);
+        });
+
+
+        $('#btn6').click(function(){
+
+            $('<li>新的li</li>').prependTo($ul);
+        })
+
+        
+    </script>
+</body>
+</html>

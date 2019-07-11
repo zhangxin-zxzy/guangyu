@@ -1,0 +1,1358 @@
+body {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    z-index: 999
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+.container {
+    width: 1920px;
+    min-width: 1280px;
+    margin: 0 auto;
+    position: absolute;
+    height: 2998px;
+    /* z-index: 999 */
+    /* overflow: hidden; */
+    /* overflow-y: hidden;  */
+    /* animation: bodyMove 3s 4s linear forwards; */
+}
+
+.gai {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 88;
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+    margin-top: -200px;
+}
+
+.wrap {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.wrap .img2 {
+    top: 218px;
+}
+
+.wrap .img3 {
+    position: absolute;
+    right: 0;
+    top: 428px;
+}
+
+.wrap .img4 {
+    position: absolute;
+    top: 518px;
+    left: 0;
+}
+
+.wrap .img5 {
+    position: absolute;
+    top: 900px;
+}
+
+.enter {
+    position: absolute;
+    width: 117px;
+    height: 38px;
+    top: 20px;
+    right: 20px;
+    background: url("./对话陈星汉/按钮背景图.png") no-repeat;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 8px;
+}
+
+.enter:hover a {
+    text-decoration: underline;
+}
+
+.enter a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: #fff;
+}
+
+.sildeBar {
+    width: 180px;
+    height: 268px;
+    position: fixed;
+    right: -400px;
+    top: 50%;
+    margin-top: -134px;
+    text-align: center;
+    z-index: 99;
+    /* transition: all 1s linear 2s; */
+}
+
+.sideBar {
+    width: 139px;
+    height: 282px;
+    position: fixed;
+    right: -50px;
+    top: 50%;
+    margin-top: -134px;
+    background: url("./对话陈星汉/侧目栏打开.png") no-repeat;
+    text-align: center;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.sildeBar .test {
+    width: 204px;
+    height: 84px;
+    padding: 12px;
+    margin-left: -12px;
+    display: block;
+    background: url("./对话陈星汉/预约测试.png") no-repeat
+}
+.sildeBar .test:hover{
+    background: url('./对话陈星汉/预约测试高亮.png') no-repeat;
+}
+
+.sildeBar .test>a {
+    width: 180px;
+    height: 60px;
+    border-radius: 8px;
+    display: block;
+}
+
+
+
+.sildeBar .code {
+    position: relative;
+    width: 180px;
+    height: 200px;
+    background: url("./对话陈星汉/二维码.jpg") no-repeat center;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 8px;
+}
+
+.sildeBar .code p {
+    width: 100%;
+    position: absolute;
+    bottom: 5px;
+    text-align: center;
+    color: #2c6cb2;
+    font-size: 14px;
+}
+
+.sildeBar .close {
+    position: absolute;
+    width: 90px;
+    height: 46px;
+    display: block;
+    line-height: 34px;
+    background: url("./对话陈星汉/关闭星星.png") no-repeat;
+    right: 0px;
+}
+
+.big-title {
+    width: 840px;
+    height: 430px;
+    margin: 50px auto 0;
+    z-index: 10;
+}
+
+.big-title .logo a {
+    position: absolute;
+    width: 100px;
+    height: 233px;
+    left: 50%;
+    top: 300px;
+    margin-left: -50px;
+    z-index: 5;
+    background: url("./对话陈星汉/logo.webp") no-repeat;
+    /* margin: 0 auto; */
+    opacity: 0;
+    transition: all 1s linear;
+}
+
+.big-title .title2 {
+    position: absolute;
+    width: 840px;
+    height: 142px;
+    top: 400px;
+    background: url("./对话陈星汉/对话陈星汉安排上.png") no-repeat;
+    margin: 30px auto 0;
+    /* top: 50px; */
+    opacity: 0;
+    transition: all 1s linear 1s;
+}
+
+.big-title .title3 {
+    position: absolute;
+    width: 605px;
+    height: 73px;
+    left: 50%;
+    margin-left: -300px;
+    top: 500px;
+    background: url("./对话陈星汉/向知名华人提问.png") no-repeat;
+    /* margin: 20px auto 0; */
+    opacity: 0;
+    transition: all 1s linear 2s;
+}
+
+.footImg {
+    position: absolute;
+    width: 1920px;
+    height: 2998px;
+    top: 100px;
+    background: url("./对话陈星汉/遮挡物.png") no-repeat;
+    /* display: none; */
+    /* opacity: 0 */
+    z-index: 3
+}
+
+.footImg .chatRoom {
+    position: absolute;
+    width: 517px;
+    height: 670px;
+    /* background-color: pink; */
+    top: 820px;
+    left: 400px;
+    z-index: 3;
+    /* transition: all 2s linear; */
+    /* transform: translateY(800) */
+}
+
+.footImg .chatRoom .mess {
+    width: 100%;
+    height: 53px;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.footImg .chatRoom .leftPeo {
+    width: 57px;
+    height: 51px;
+    position: absolute;
+    left: 0;
+    background: url("./对话陈星汉/左边人物.png")
+}
+
+
+.footImg .chatRoom .chatBlack {
+    position: absolute;
+    top: 0;
+    left: 65px;
+}
+
+.footImg .chatRoom .leftChat {
+    position: absolute;
+    top: 33px;
+    width: 17px;
+    height: 17px;
+    background: url("./对话陈星汉/左边对话框.png") no-repeat
+}
+
+.footImg .chatRoom .chatBlack .word {
+    position: absolute;
+    left: 17px;
+    width: 150px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, .5);
+    text-align: left;
+    padding: 10px;
+    line-height: 32px;
+    font-size: 16px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    color: rgba(255, 236, 168, .8);
+}
+
+.footImg .chatRoom .chatBlack .word1 {
+    position: absolute;
+    left: 17px;
+    background-color: rgba(0, 0, 0, .5);
+    width: 420px;
+    height: 55px;
+    text-align: left;
+    line-height: 20px;
+    text-align: left;
+    padding: 10px;
+    top: -5px;
+    /* line-height: 32px; */
+    font-size: 16px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    color: rgba(255, 236, 168, .8);
+    /* display: inline-block; */
+}
+
+.footImg .chatRoom .chatBlack .word2 {
+    float: left;
+}
+
+.footImg .chatRoom .chatBlack .chen {
+    width: 290px;
+    float: right;
+}
+
+
+
+
+
+
+.footImg .chatRoom .mess {
+    width: 100%;
+    height: 53px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.footImg .chatRoom .rightPeo {
+    position: absolute;
+    right: 0;
+    width: 57px;
+    height: 51px;
+    display: inline-block;
+    background: url("./对话陈星汉/右边人物.png")
+}
+
+
+.footImg .chatRoom .chatOrange {
+    position: absolute;
+    top: 0;
+    right: 65px;
+}
+
+.footImg .chatRoom .rightChat {
+    position: absolute;
+    right: 0;
+    top: 33px;
+    width: 17px;
+    height: 17px;
+    background: url("./对话陈星汉/右边对话框.png") no-repeat
+}
+
+.footImg .chatRoom .chatOrange .word {
+    position: absolute;
+    left: -167px;
+    width: 150px;
+    height: 50px;
+    background-color: rgba(255, 236, 168, .8);
+    text-align: left;
+    line-height: 30px;
+    padding: 10px;
+    font-size: 16px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.footImg .chatRoom .chatOrange .wordlast {
+    position: absolute;
+    left: -217px;
+    width: 200px;
+    height: 50px;
+    background-color: rgba(255, 236, 168, .8);
+    text-align: left;
+    line-height: 30px;
+    padding: 10px;
+    font-size: 16px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+#lvRen {
+    background: 0;
+    font-size: 16px;
+    width: 160px;
+
+}
+
+.decoration {
+    width: 100%;
+    height: 181px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.decoration .question {
+    position: absolute;
+    left: 70px;
+    width: 64px;
+    height: 46px;
+    text-align: center;
+    font-size: 16px;
+    color: rgba(255, 236, 168, 1);
+}
+
+.decoration .input {
+    position: absolute;
+    left: 150px;
+    width: 280px;
+    height: 180px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: rgba(255, 236, 168, .8);
+}
+
+.decoration .input>textarea {
+    width: 240px;
+    height: 150px;
+    background: 0;
+    resize: none;
+    border: none;
+    font-size: 16px;
+}
+
+.send {
+    width: 202px;
+    height: 45px;
+    display: block;
+    margin: 0 auto;
+    background: url("./对话陈星汉/发送.png") no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.footImg .threePeo {
+    width: 907px;
+    height: 388px;
+    /* background: url("./对话陈星汉/三个人.png") no-repeat; */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/* 朱富强 */
+@keyframes video {
+    0% {
+        transform: translate(0, -10px)
+    }
+
+    100% {
+        transform: translate(0, 30px);
+    }
+}
+
+@keyframes opacity {
+    0% {
+        opacity: .1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.footImg .tips {
+    position: absolute;
+    left: 50%;
+    top: 1500px;
+    width: 167px;
+    height: 93px;
+    background: url('./对话陈星汉/其他人在问什么.png') no-repeat;
+    margin-left: -83px;
+    padding-top: 74px;
+    animation: video 3s linear infinite alternate;
+    z-index: 50;
+}
+
+.footImg .tips span {
+    width: 2px;
+    height: 6px;
+    background: #fefefe;
+    display: block;
+    margin: 5px auto 0;
+    animation: opacity 1.8s infinite linear;
+}
+
+.footImg .tips span:nth-child(1) {
+    animation-delay: 0s;
+
+}
+
+.footImg .tips span:nth-child(2) {
+    animation-delay: .2s;
+}
+
+.footImg .tips span:nth-child(3) {
+    animation-delay: .4s;
+}
+
+.footImg .tips span:nth-child(4) {
+    animation-delay: .6s;
+}
+
+.footImg .tips span:nth-child(5) {
+    animation-delay: .8s;
+}
+
+.footImg .tips span:nth-child(6) {
+    animation-delay: 1s;
+}
+
+.footImg .tips span:nth-child(7) {
+    animation-delay: 1.2s;
+}
+
+.footImg .tips span:nth-child(8) {
+    animation-delay: 1.4s;
+}
+
+.footImg .tips span:nth-child(9) {
+    animation-delay: 1.6s;
+}
+
+.footImg .tips span:nth-child(10) {
+    animation-delay: 1.8s;
+}
+
+.footImg .tit {
+    position: absolute;
+    top: 57%;
+    left: 43%;
+    width: 257px;
+    height: 147px;
+
+    background: url('./对话陈星汉/旅人提问集.png') no-repeat;
+}
+
+.footImg .sec3 {
+    width: 277px;
+    height: 39px;
+    left: 53%;
+    top: -3%;
+    position: absolute;
+    /* top: 1000px; */
+    /* left: 1000px; */
+    z-index: 60;
+}
+
+.footImg .sec3 ul {
+    width: 274px;
+    height: 35px;
+    border: 2px solid #fff;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 1975px;
+    margin-left: -200px;
+}
+
+.footImg .sec3 ul li {
+    position: relative;
+    float: left;
+    width: 90px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+
+}
+
+.footImg .sec3 ul li:hover {
+    background-color: #fff;
+    color: #62a1c9;
+}
+
+.footImg .sec3 ul li:nth-child(1) {
+    background-color: #fff;
+    color: #62a1c9;
+}
+
+.footImg .sec3 .change {
+    margin-left: 100px;
+    margin-top: -25px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.footImg .sec3 .change i {
+
+    width: 15px;
+    height: 17px;
+    display: inline-block;
+    vertical-align: middle;
+
+    margin-right: 5px;
+    transition: all ease .3s;
+    background: url('./对话陈星汉/换一批.png') no-repeat
+}
+.footImg .sec3 .change:hover i {
+    transform: rotate(180deg)
+} 
+
+
+/* 标签墙 */
+
+#zz {
+    position: absolute;
+    top: 65%;
+    /* left: 0; */
+}
+
+.ask_con {
+    position: relative;
+    /* background-color: skyblue; */
+    height: 700px;
+    width: 1800px;
+    margin-left: 60px;
+    margin-top: 10px;
+    display: none;
+    z-index: 50;
+
+
+}
+
+@keyframes bounceInLeft {
+
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-3000px, 0, 0);
+        transform: translate3d(-3000px, 0, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(25px, 0, 0);
+        transform: translate3d(25px, 0, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(5px, 0, 0);
+        transform: translate3d(5px, 0, 0);
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes bounceInRight {
+
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(3000px, 0, 0);
+        transform: translate3d(3000px, 0, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(-25px, 0, 0);
+        transform: translate3d(-25px, 0, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(-5px, 0, 0);
+        transform: translate3d(-5px, 0, 0);
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+
+
+
+
+/* @keyframes rollIn {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+      transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  } */
+
+.ask_con .ti {
+    width: 284px;
+    height: 287px;
+    cursor: pointer;
+    position: absolute;
+    /* background-image: url('./对话陈星汉/1.png'); */
+    background-repeat: no-repeat;
+    transition: all 1.5s linear ;
+    /* animation: rollIn 3s linear .3s; */
+
+
+}
+
+.ask_con .slide {
+    width: 248px;
+    height: 249px;
+    padding: 30px 25px;
+    border-radius: 30px;
+    /* border: 2px red solid; */
+    margin-left: 18px;
+    position: relative;
+}
+
+.ask_con .slide:hover {
+    border: 2px solid #fff;
+}
+
+.ask_con .box1 .more,
+.ask_con .box2 .more,
+.ask_con .box3 .more,
+.ask_con .box4 .more,
+.ask_con .box5 .more,
+.ask_con .box6 .more,
+.ask_con .box7 .more,
+.ask_con .box8 .more,
+.ask_con .box9 .more,
+.ask_con .box10 .more,
+.ask_con .box11 .more,
+.ask_con .box12 .more,
+.ask_con .box13 .more,
+.ask_con .box14 .more {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    background: url('./对话陈星汉/添加.png') no-repeat;
+    left: 96px;
+    top: -28px;
+    display: none;
+}
+
+.ask_con .box1 {
+    /* left: 0;
+    top: 0; */
+    animation: bounceInLeft 3s linear;
+
+}
+
+.ask_con .box2 {
+    /* left: 216px;
+    top: 187px; */
+    /* left: 0;
+    top: 0; */
+    animation: bounceInLeft 4s linear;
+
+}
+
+.ask_con .box3 {
+    /* left: 400px;
+    top: 10px; */
+    /* left: 0;
+    top: 0; */
+    animation: bounceInLeft 4s linear;
+
+}
+
+.ask_con .box4 {
+    /* left: 442px;
+    top: 190px; */
+    /* left: 0;
+    top: 0; */
+    animation: bounceInLeft 5s linear
+        /* .31s; */
+
+}
+
+.ask_con .box5 {
+    /* left: 660px;
+    top: 32px; */
+    /* left: 0;
+    top: 0; */
+    animation: bounceInLeft 5s linear
+        /* .33s; */
+}
+
+.ask_con .box6 {
+    /* left: 933px;
+    top: 51px; */
+    /* left: 0;
+    top: 0; */
+    animation: bounceInLeft 6s linear
+        /* .4s; */
+}
+
+.ask_con .box7 {
+    /* left: 1356px;
+    top: 84px; */
+    left: 0;
+    top: 0;
+    animation: bounceInLeft 6s linear
+        /* .6s; */
+}
+
+.ask_con .box8 {
+    /* left: 560px;
+    top: 438px; */
+    left: 0;
+    top: 0;
+    animation: bounceInLeft 6s linear
+        /* .4s; */
+}
+
+.ask_con .box9 {
+    /* left: 726px;
+    top: 300px; */
+    left: 0;
+    top: 0;
+    animation: bounceInLeft 7.1s linear
+        /* .7s; */
+}
+
+.ask_con .box10 {
+    /* left: 826px;
+    top: 482px; */
+    left: 0;
+    top: 0;
+    animation: bounceInLeft 2.3s linear
+        /* .6s; */
+}
+
+.ask_con .box11 {
+    /* left: 1123px;
+    top: 392px; */
+    left: 0;
+    top: 0;
+    animation: bounceInLeft 3.3s linear
+        /* .66s; */
+}
+
+.ask_con .box12 {
+    /* left: 1400px;
+    top: 287px; */
+    left: 0;
+    top: 0;
+    animation: bounceInLeft 4.9s linear
+        /* .77s; */
+}
+
+.ask_con .box13 {
+    /* left: 1362px;
+    top: 442px; */
+    left: 0;
+    top: 0;
+    animation: bounceInLeft 3.5s linear
+        /* .44s; */
+}
+
+.ask_con .box14 {
+    /* left: 930px;
+    top: 279px; */
+    left: 0;
+    top: 0;
+    animation: bounceInLeft 3.1s linear
+        /* .67s; */
+}
+
+
+/* 标签墙主体 */
+
+
+/* 标签墙第二页 */
+.ask_con2 {
+    position: relative;
+    /* background-color: skyblue; */
+    height: 700px;
+    width: 1800px;
+    margin-left: 60px;
+    margin-top: 10px;
+    display: none;
+}
+
+.ask_con2 .ti {
+    width: 284px;
+    height: 287px;
+    cursor: pointer;
+    position: absolute;
+    background-image: url('./对话陈星汉/1.png');
+    background-repeat: no-repeat;
+    transition: all 1.5s linear ;
+}
+
+.ask_con2 .slide {
+    width: 248px;
+    height: 249px;
+    padding: 30px 25px;
+    border-radius: 30px;
+    /* border: 2px red solid; */
+    margin-left: 18px;
+    position: relative;
+}
+
+.ask_con2 .slide:hover {
+    border: 2px solid #fff;
+}
+
+.ask_con2 .box1 .more,
+.ask_con2 .box2 .more,
+.ask_con2 .box3 .more,
+.ask_con2 .box4 .more,
+.ask_con2 .box5 .more,
+.ask_con2 .box6 .more,
+.ask_con2 .box7 .more,
+.ask_con2 .box8 .more,
+.ask_con2 .box9 .more,
+.ask_con2 .box10 .more,
+.ask_con2 .box11 .more,
+.ask_con2 .box12 .more,
+.ask_con2 .box13 .more,
+.ask_con2 .box14 .more {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    background: url('./对话陈星汉/添加.png') no-repeat;
+    left: 96px;
+    top: -28px;
+    display: none;
+}
+
+.ask_con2 .box1 {
+    /* left: 0;
+    top: 0; */
+    animation: bounceInLeft 1s linear
+        /* .1s; */
+}
+
+.ask_con2 .box2 {
+    /* left: 216px;
+    top: 187px; */
+    /* left: 0;
+    top: 0; */
+    animation: bounceInLeft 2s linear
+        /* .2s; */
+
+}
+
+.ask_con2 .box3 {
+    /* left: 400px;
+    top: 10px; */
+    /* left: 0;
+    top: 0; */
+    animation: bounceInLeft 2s linear
+        /* .3s; */
+
+}
+
+.ask_con2 .box4 {
+    /* left: 442px;
+    top: 190px; */
+    /* left: 0;
+    top: 0; */
+    animation: bounceInLeft 3s linear
+        /* .31s; */
+
+}
+
+.ask_con2 .box5 {
+    /* left: 660px;
+    top: 32px; */
+    /* left: 0;
+    top: 0; */
+    animation: bounceInLeft 3.7s linear
+        /* .33s; */
+}
+
+.ask_con2 .box6 {
+    /* left: 933px;
+    top: 51px; */
+    /* left: 0;
+    top: 0; */
+    animation: bounceInLeft 4.3s linear
+        /* .4s; */
+}
+
+.ask_con2 .box7 {
+    /* left: 1356px;
+    top: 84px; */
+    left: 0;
+    top: 0;
+    animation: bounceInLeft 4.3s linear
+        /* .6s; */
+}
+
+.ask_con2 .box8 {
+    /* left: 560px;
+    top: 438px; */
+    left: 0;
+    top: 0;
+    animation: bounceInLeft 5.3s linear
+        /* .4s; */
+}
+
+.ask_con2 .box9 {
+    /* left: 726px;
+    top: 300px; */
+    left: 0;
+    top: 0;
+    animation: bounceInLeft 6.3s linear
+        /* .7s; */
+}
+
+.ask_con2 .box10 {
+    /* left: 826px;
+    top: 482px; */
+    left: 0;
+    top: 0;
+    animation: bounceInLeft 2.3s linear
+        /* .6s; */
+}
+
+.ask_con2 .box11 {
+    /* left: 1123px;
+    top: 392px; */
+    left: 0;
+    top: 0;
+    animation: bounceInLeft 1.3s linear
+        /* .66s; */
+}
+
+.ask_con2 .box12 {
+    /* left: 1400px;
+    top: 287px; */
+    left: 0;
+    top: 0;
+    animation: bounceInLeft 5.4s linear
+        /* .77s; */
+}
+
+.ask_con2 .box13 {
+    /* left: 1362px;
+    top: 442px; */
+    left: 0;
+    top: 0;
+    animation: bounceInLeft 4.3s linear
+        /* .44s; */
+}
+
+.ask_con2 .box14 {
+    /* left: 930px;
+    top: 279px; */
+    left: 0;
+    top: 0;
+    animation: bounceInLeft 7.3s linear
+        /* .67s; */
+}
+
+
+/* 标签墙第二页 */
+
+/* 标签墙第三页 */
+
+.ask_con3 {
+    position: relative;
+    /* background-color: skyblue; */
+    height: 700px;
+    width: 1800px;
+    margin-left: 60px;
+    margin-top: 10px;
+    display: none;
+}
+
+.ask_con3 .ti {
+    width: 284px;
+    height: 287px;
+    cursor: pointer;
+    position: absolute;
+    background-image: url('./对话陈星汉/1.png');
+    background-repeat: no-repeat;
+    transition: all 1.5s linear ;
+}
+
+.ask_con3 .slide {
+    width: 248px;
+    height: 249px;
+    padding: 30px 25px;
+    border-radius: 30px;
+    /* border: 2px red solid; */
+    margin-left: 18px;
+    position: relative;
+}
+
+.ask_con3 .slide:hover {
+    border: 2px solid #fff;
+}
+
+.ask_con3 .box1 .more,
+.ask_con3 .box2 .more,
+.ask_con3 .box3 .more,
+.ask_con3 .box4 .more,
+.ask_con3 .box5 .more,
+.ask_con3 .box6 .more,
+.ask_con3 .box7 .more,
+.ask_con3 .box8 .more,
+.ask_con3 .box9 .more,
+.ask_con3 .box10 .more,
+.ask_con3 .box11 .more,
+.ask_con3 .box12 .more,
+.ask_con3 .box13 .more,
+.ask_con3 .box14 .more {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    background: url('./对话陈星汉/添加.png') no-repeat;
+    left: 96px;
+    top: -28px;
+    display: none;
+}
+
+.ask_con3 .box1 {
+    /* left: 0;
+    top: 0; */
+    animation: bounceInLeft 6.3s linear
+        /* .1s; */
+}
+
+.ask_con3 .box2 {
+    /* left: 216px;
+    top: 187px; */
+    /* left: 0;
+    top: 0; */
+    animation: bounceInLeft 7.3s linear
+        /* .2s; */
+
+}
+
+.ask_con3 .box3 {
+    /* left: 400px;
+    top: 10px; */
+    /* left: 0;
+    top: 0; */
+    animation: bounceInLeft 6.3s linear
+        /* .3s; */
+
+}
+
+.ask_con3 .box4 {
+    /* left: 442px;
+    top: 190px; */
+    /* left: 0;
+    top: 0; */
+    animation: bounceInLeft 5.3s linear
+        /* .31s; */
+
+}
+
+.ask_con3 .box5 {
+    /* left: 660px;
+    top: 32px; */
+    /* left: 0;
+    top: 0; */
+    animation: bounceInLeft 3.2s linear
+        /* .33s; */
+}
+
+.ask_con3 .box6 {
+    /* left: 933px;
+    top: 51px; */
+    /* left: 0;
+    top: 0; */
+    animation: bounceInLeft 3.9s linear
+        /* .4s; */
+}
+
+.ask_con3 .box7 {
+    /* left: 1356px;
+    top: 84px; */
+    left: 0;
+    top: 0;
+    animation: bounceInLeft 4.31s linear
+        /* .6s; */
+}
+
+.ask_con3 .box8 {
+    /* left: 560px;
+    top: 438px; */
+    left: 0;
+    top: 0;
+    animation: bounceInLeft 2.3s linear
+        /* .4s; */
+}
+
+.ask_con3 .box9 {
+    /* left: 726px;
+    top: 300px; */
+    left: 0;
+    top: 0;
+    animation: bounceInLeft 3.3s linear
+        /* .7s; */
+}
+
+.ask_con3 .box10 {
+    /* left: 826px;
+    top: 482px; */
+    left: 0;
+    top: 0;
+    animation: bounceInLeft 6.66s linear
+        /* .6s; */
+}
+
+.ask_con3 .box11 {
+    /* left: 1123px;
+    top: 392px; */
+    left: 0;
+    top: 0;
+    animation: bounceInLeft 7.3s linear
+        /* .66s; */
+}
+
+.ask_con3 .box12 {
+    /* left: 1400px;
+    top: 287px; */
+    left: 0;
+    top: 0;
+    animation: bounceInLeft 4.3s linear
+        /* .77s; */
+}
+
+.ask_con3 .box13 {
+    /* left: 1362px;
+    top: 442px; */
+    left: 0;
+    top: 0;
+    animation: bounceInLeft 5.3s linear
+        /* .44s; */
+}
+
+.ask_con3 .box14 {
+    /* left: 930px;
+    top: 279px; */
+    left: 0;
+    top: 0;
+    animation: bounceInLeft 4.3s linear
+        /* .67s; */
+}
+
+/* 标签墙第三页 */
+
+.word {
+    height: 125px;
+    color: #fff;
+
+    font-size: 16px;
+    font-family: '微软雅黑';
+    line-height: 30px;
+
+
+    /* 
+    display: -webkit-box;    
+    -webkit-box-orient: vertical;    
+    -webkit-line-clamp: 3;     */
+
+
+
+    overflow: hidden;
+    word-spacing: normal;
+
+    text-overflow: ellipsis;
+
+}
+
+
+/* 朱富强 */
+
+/* 弹出框 */
+
+.messa {
+    position: relative;
+    width: 694px;
+    height: 477px;
+    background-color: red;
+    z-index: 99;
+    margin-top: 99px;
+}
+
+/* 弹出框 */
+
+
+
+
+.Black1,
+.Black2,
+.Black3,
+.Yellow1,
+.decoration,
+.Yellow2,
+.send {
+    top: 150px;
+    opacity: 0;
+}
+
+.Black1 {
+    transition: all 1s linear 5s;
+}
+
+.Yellow1 {
+    transition: all 1s linear 6s;
+}
+
+.Black2 {
+    transition: all 1s linear 7s;
+}
+
+.Black3 {
+    transition: all 1s linear 8s;
+}
+
+.decoration {
+    transition: all 1s linear 9s;
+}
+
+.Yellow2 {
+    transition: all 1s linear 10s;
+}
+
+.send {
+    transition: all 1s linear 11s;
+}
+
+.foot {
+
+    position: absolute;
+    /* background-color: red; */
+    bottom: 0;
+
+}
+
+.foot img {
+
+}

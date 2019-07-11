@@ -1,0 +1,260 @@
+.yuyue {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -590px;
+    margin-top: -366px;
+    width: 1179px;
+    height: 731px;
+    background: url("./对话陈星汉/公测预约背景图.png") no-repeat;
+    z-index: 50;
+    display: none;
+
+}
+
+.yuyue .close-yuyue {
+    position: absolute;
+    right: 67px;
+    top: 50px;
+    width: 86px;
+    height: 82px;
+    display: block;
+    background: url("./对话陈星汉/黑色圆圈.png") no-repeat;
+    cursor: pointer;
+
+}
+
+/* .yuyue .close-yuyue .star {
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    background: url("./对话陈星汉/点击发送背景-关闭.png") no-repeat;
+    left: 50%;
+    margin-left: -20px;
+    top: 15px;
+    transition: all 1s linear;
+} */
+
+.pinpai {
+    position: absolute;
+    top: 230px;
+    left:340px;
+    width: 320px;
+    height: 42px;
+    border-radius: 8px;
+    /* background-color: pink; */
+}
+
+.pinpai .IOS{
+    width: 160px;
+    height: 42px;
+    text-align: center;
+    line-height: 42px;
+    font-size: 14px;
+    background-color: #57caee;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    color: #fff;
+    float: left;
+}
+.pinpai .Android{
+    width: 160px;
+    height: 42px;
+    text-align: center;
+    line-height: 42px;
+    font-size: 14px;
+    color: #57caee;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    float: right;
+}
+
+.pinpai .Android:hover{
+    color: #fff;
+    background-color: #57caee;
+}
+
+.yuyue .close-yuyue:hover {
+    transition: all 1s linear;
+    transform: rotate(180deg)
+}
+
+.yuyue .yuyueWord {
+    position: absolute;
+    left: 333px;
+    top: 130px;
+}
+
+.bigBox1 {
+    position: absolute;
+    width: 262px;
+    height: 278px;
+    top: 300px;
+    left: 340px;
+    background: 0;
+}
+
+.inputbox {
+    position: relative;
+    width: 320px;
+    height: 42px;
+    border: 1px solid #ccc;
+    border-radius: 8px
+}
+
+.inputbox .icon {
+    position: absolute;
+    left: 0;
+    width: 36px;
+    height: 42px;
+
+}
+
+.inputbox .icon>i {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 24px;
+    height: 24px;
+    display: block;
+    background: url("./对话陈星汉/精灵图.png") 0px -480px no-repeat
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+.inputbox .inputPhone1 {
+    position: absolute;
+    left: 36px;
+    width: 192px;
+    height: 42px;
+
+    background: 0;
+}
+
+.pintu1 {
+    position: absolute;
+    left: 0px;
+    top: 55px;
+    width: 320px;
+    height: 42px;
+    border: 1px solid #ccc;
+    /* border-radius: 8px */
+}
+
+.pintu1 .arrow-right1 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    z-index: 6;
+    cursor: pointer;
+}
+
+.pintu1 .arrow-right1:hover {
+    background-color: skyblue;
+}
+
+.arrow-right1:hover .quekou1 {
+    display: block;
+
+}
+
+.pintu1:hover .yanzheng1Img1 {
+    display: block;
+}
+
+.pintu1 .arrow-right1>i {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    width: 14px;
+    height: 10px;
+    display: block;
+    background: url("./对话陈星汉/精灵图2.png") 0 -25px no-repeat;
+}
+
+.pintu1 .wenzi1 {
+    position: absolute;
+    top: 12px;
+    left: 44px;
+    font-size: 14px;
+}
+
+.yanzheng1 {
+    top: 70px;
+}
+
+.yanzheng1 .inputyanheng1 {
+    float: left;
+    width: 210px;
+    height: 40px;
+    background: 0;
+    padding: 5px 15px;
+    border-right: 1px solid #ccc;
+}
+
+.getyazheng1{
+    float: right;
+    width: 102px;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    font-size: 14px;
+    color: grey;
+    text-align: center;
+}
+
+.getyazheng1:hover{
+    color: skyblue;
+}
+
+.liji-yuyue {
+    position: absolute;
+    width: 320px;
+    height: 56px;
+    line-height: 56px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 8px;
+    text-align: center;
+    top: 170px;
+    background-color: grey;
+    /* background: url("./对话陈星汉/立即登录2.png") no-repeat */
+}
+
+/* .liji-yuyue:hover {
+    background: url("./对话陈星汉/立即登录.png")
+} */
+
+.haveQuertion {
+    position: absolute;
+    left: 100px;
+    top: 250px;
+    color: grey
+}
+
+.yanzheng1Img1 {
+    position: absolute;
+    width: 320px;
+    height: 160px;
+    background: url("./对话陈星汉/验证图片.jpg") no-repeat;
+    background-size: 60%;
+    z-index: 5;
+    top: 40px;
+    display: none;
+}
+
+.quekou1 {
+    position: absolute;
+    z-index: 6;
+    top: 40px;
+    width: 60px;
+    height: 158px;
+    background: url("./对话陈星汉/小缺口.png") no-repeat;
+    background-size: 60%;
+    display: none;
+
+}

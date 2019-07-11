@@ -1,0 +1,77 @@
+body,
+div,
+span,
+a,
+img,
+input,
+p,
+ul,
+li,
+del,
+strong,
+i,
+ins,
+em,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    /* -webkit-tap-highlight-color: none; */
+    color: #000;
+    /* target:_blank; */
+}
+li {
+    list-style: none;
+}
+img {
+    border: none;
+    vertical-align: top;
+}
+input {
+    outline: none;
+    border: none;
+}
+body {
+    font-size: 12px;
+    background-color: #ededed;
+}
+i {
+    font-style: normal;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+} 
+
+ .clearfix {
+	*zoom: 1;
+}
+
+
+
+html,body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    
+} 
+
+
+
+.hidden{
+    display: none;
+}
+.show{
+    display: block;
+}

@@ -1,0 +1,120 @@
+.part1{
+    position: absolute;
+    width: 1200px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    margin-left: -600px;
+    z-index: 1;
+
+
+}
+.part1 .slogan{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    /* margin: 60px auto 0px; */
+    /* margin-left: -472.5px; */
+    margin-left: -450px;
+    width: 945px;
+    height: 521px;
+    background: url('../images/main/slogan2_281f670.png');
+    /* display: none; */
+    opacity: 0;
+    
+}
+.video_btn_box{
+    position: absolute;
+    left: 910px;
+    top: 390px;
+    width: 86px;
+    height: 86px;
+    /* background: url('../images/main/video_fire_35d7043.png'); */
+    /* display: none; */
+    opacity: 0;
+
+}
+.video_btn_box .videoBtn{
+    /* display: block; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 1s
+    /* background: url('../images/main/video_fire_35d7043.png'); */
+    /* display: none; */
+}
+
+.video_btn_box .videoBtn:hover{
+    transform: scale(1.2);
+}
+.video_btn_box .videoBtn i {
+    /* display: block; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/main/video_fire_35d7043.png');
+    display: none;
+    
+}
+.video_btn_box .videoBtn i:nth-child(2) {
+    background-position-x: -86px; 
+}
+.video_btn_box .videoBtn i:nth-child(3) {
+    background-position-x: -172px; 
+}
+.video_btn_box .videoBtn i:nth-child(4) {
+    background-position-x: -258px; 
+}
+.video_btn_box .videoBtn i:nth-child(1) {
+    display: block;
+}
+
+
+.part1 .download {
+    position: absolute;
+    /* top: 556px; */
+    top: 556px;
+    left: 50%;
+    margin-left: -325px;
+    /* top: 55px; */
+    /* display: none; */
+    opacity: 0;
+
+    
+}
+.part1 .download .app {
+    float: left;
+    width: 172px;
+
+}
+
+ .app .iso-store {
+     display: block;
+    margin-bottom: 6px;
+ }
+ .download .qr {
+    float: left;
+    padding: 8px;
+    margin-left: 13px;
+    border-radius: 10px;
+    background-color: #fff;
+  
+ }
+
+.qr img {
+    width: 92px;
+   
+}
+
+.download .download_text {
+    float: left;
+    margin-top: 25px;
+    margin-left: 13px;
+    width: 400px;
+    height: 93px;
+    background: url('../images/part1/download_text_c26ba56.png');
+}

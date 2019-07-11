@@ -1,0 +1,175 @@
+/* body {
+    background-color: blue;
+} */
+.ctrls {
+    position: absolute;
+    right: 40px;
+    top: 90px;
+    z-index: 10;
+    /* display: none; */
+    opacity: 0;
+}
+
+.ctrls li {
+    position: relative;
+    list-style: none;
+    float: left;
+    margin-right: 18px;
+}
+.ctrls .link-item a {
+    float: left;
+    width: 117px;
+    height: 38px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 38px;
+    /* background: url("./img/btn_bg_13361bf.png") no-repeat center center; */
+    background: url("../images/img/btn_bg_13361bf.png") no-repeat center center;
+}
+
+.ctrls .drop {
+    width: 240px;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: 10px;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    margin-left: -280px;
+    /* display: none; */
+    font-size: 14px;
+    line-height: 1.4;
+
+}
+
+.ctrls .drop p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+
+.ctrls .drop p::before {
+    content: '';
+    /* background: url('./img/下载.png') no-repeat; */
+    background: url('../images/img/下载.png') no-repeat;
+    width: 17px;
+    height: 7px;
+    position: absolute;
+    top: -7px;
+    left: 50%;
+    margin-left: -9px;
+}
+
+.ctrls .music {
+    float: left;
+    cursor: pointer;
+}
+
+.ctrls .music i {
+    display: inline-block;
+    width: 2px;
+    height: 18px;
+    background: #fff;
+    margin: 0 1px;
+    margin-top: 10px;
+    transform-origin: 50% 100%;
+
+}
+
+.ctrls .music i:nth-child(1) {
+    animation: bigger 1s linear infinite alternate forwards;
+}
+
+.ctrls .music i:nth-child(2) {
+    animation: bigger 1s 0.3s linear infinite alternate forwards;
+}
+
+.ctrls .music i:nth-child(3) {
+    animation: bigger 1s 0.6s linear infinite alternate forwards;
+}
+
+.ctrls .music i:nth-child(4) {
+    animation: bigger 1s 0.9s linear infinite alternate forwards;
+}
+
+.ctrls .music i:nth-child(5) {
+    opacity: 0;
+}
+
+.qr_code {
+    width: 100px;
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: 10px;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    margin-left: -50px;
+    padding-bottom: 10px;
+    display: none;
+}
+#qr_code {
+    margin-left: -50px;
+}
+
+.qr_code img {
+    width: 100px;
+}
+
+.qr_code::before {
+    content: '';
+    /* background: url('./img/下载.png') no-repeat; */
+    background: url('../images/img/下载.png') no-repeat;
+    width: 17px;
+    height: 7px;
+    position: absolute;
+    top: -7px;
+    left: 50%;
+    margin-left: -9px;
+}
+
+.qr_code p {
+    font-size: 14px;
+    color: #000;
+    text-align: center;
+    line-height: 22px;
+}
+
+.wx .qr_code {
+    margin-left: -3px;
+}
+
+.QQ .qr_code {
+    margin-left: 65px;
+}
+
+.dashen .qr_code {
+    margin-left: 130px;
+}
+.dashen .qr-last {
+    width: 80px;
+    height: 80px;
+    border-bottom: 0px;
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 0px;
+    
+    /* box-sizing: border-box; */
+}
+.dashen .qr-last img {
+    width: 80px;
+    /* box-sizing: border-box; */
+}
+
+
+@keyframes bigger {
+
+    from {}
+
+    to {
+        height: 3px;
+    }
+}

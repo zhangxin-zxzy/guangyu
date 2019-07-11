@@ -1,0 +1,218 @@
+
+.login {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -371px;
+    margin-top: -297px;
+    width: 743px;
+    height: 495px;
+    background: url("./对话陈星汉/点击发送背景.png");
+    z-index: 50;
+    display: none; 
+    
+}
+
+.login .close-login {
+    position: absolute;
+    right: 50px;
+    top: 10px;
+    width: 100px;
+    height: 96px;
+    display: block;
+    background: url("./对话陈星汉/关闭圆.png") no-repeat;
+    cursor: pointer;
+    
+}
+
+.login .close-login .star {
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    background: url("./对话陈星汉/点击发送背景-关闭.png") no-repeat;
+    left: 50%;
+    margin-left: -20px;
+    top: 15px;
+    transition: all 1s linear;
+}
+.login .close-login:hover .star{
+    transform: rotate(180deg)
+}
+
+.login .loginWord {
+    position: absolute;
+    left: 270px;
+    top: 50px;
+}
+
+.bigBox {
+    position: absolute;
+    width: 262px;
+    height: 278px;
+    top: 130px;
+    left: 150px;
+    background: 0;
+}
+
+.inputbox {
+    position: relative;
+    width: 262px;
+    height: 42px;
+    border: 1px solid #ccc;
+    border-radius: 8px
+}
+
+.inputbox .icon {
+    position: absolute;
+    left: 0;
+    width: 36px;
+    height: 42px;
+
+}
+
+.inputbox .icon>i {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 24px;
+    height: 24px;
+    display: block;
+    background: url("./对话陈星汉/精灵图.png") 0px -480px no-repeat
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+.inputbox .inputPhone {
+    position: absolute;
+    left: 36px;
+    width: 192px;
+    height: 42px;
+
+    background: 0;
+}
+
+.pintu {
+    position: absolute;
+    left: 20px;
+    top: 55px;
+    width: 220px;
+    height: 42px;
+    border: 1px solid #ccc;
+    /* border-radius: 8px */
+}
+
+.pintu .arrow-right {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    z-index: 6;
+    cursor: pointer;
+}
+
+.pintu .arrow-right:hover {
+    background-color: skyblue;
+}
+.arrow-right:hover .quekou {
+    display: block;
+    
+}
+
+.pintu:hover .yanzhengImg{
+    display: block;
+}
+
+.pintu .arrow-right>i {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    width: 14px;
+    height: 10px;
+    display: block;
+    background: url("./对话陈星汉/精灵图2.png") 0 -25px no-repeat;
+}
+
+.pintu .wenzi {
+    position: absolute;
+    top: 12px;
+    left: 44px;
+    font-size: 14px;
+}
+
+.yanzheng {
+    top: 70px;
+}
+
+.yanzheng .inputyanheng{
+    float: left;
+    width: 150px;
+    height: 40px;
+    background: 0;
+    padding:5px 15px;
+    border-right: 1px solid #ccc;
+}
+
+.getyazheng{
+    float: right;
+    width: 102px;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    font-size: 14px;
+    color: grey;
+    text-align: center;
+}
+
+.liji-login {
+    position: absolute;
+    width: 262px;
+    height: 67px;
+    top: 170px;
+    background: url("./对话陈星汉/立即登录2.png") no-repeat
+}
+
+.liji-login:hover {
+    background: url("./对话陈星汉/立即登录.png")
+}
+.haveQuertion {
+    position: absolute;
+    left: 100px;
+    top: 250px;
+    color:grey
+}
+
+.yanzhengImg {
+    position: absolute;
+    width: 320px;
+    height: 160px;
+    background: url("./对话陈星汉/验证图片.jpg") no-repeat;
+    background-size: 60%;
+    z-index: 5;
+    top: 40px;
+    display: none;
+}
+
+.quekou {
+    position: absolute;
+    z-index: 6;
+    top: 40px;
+    width: 60px;
+    height: 158px;
+    background: url("./对话陈星汉/小缺口.png") no-repeat;
+    background-size: 60%;
+    display: none;
+
+}
+
+/* @keyframes titledonghua{
+    from{
+
+    }
+    to{
+        transform: translateY(-250px);
+        opacity: 1;
+    }
+} */

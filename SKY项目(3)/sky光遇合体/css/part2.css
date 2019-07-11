@@ -1,0 +1,171 @@
+.part2 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -600px;
+    width: 1200px;
+    height: 1000px;
+    /* background-color: blueviolet; */
+    /* opacity: .5; */
+    z-index: 1;
+    display: none;
+    
+    /* opacity: 0; */
+}
+.part2 .news_title{
+    position: absolute;
+    /* top: 40px;  */
+    top: 80px; 
+    left: 50%;
+    margin-left: -100px;
+    width: 300px;
+    height: 255px;
+    background: url('../images/new-title/news_title_d3f3da5.png');
+    /* display: none; */
+    opacity: 0;
+}
+.part2 .new_left {
+    position: absolute;
+    left: 0;
+    /* top: 240px; */
+    top: 280px;
+    width: 640px;
+    height: 380px;
+    background-color: #fff;
+    border-radius: 30px;
+    /* display: none; */
+    opacity: 0;
+}
+
+.part2 .new_left ul {
+    margin-left: 40px;
+    margin-top: 14px;
+    position: absolute;
+}
+
+.part2 .new_left ul li {
+    width: 500px;
+    /* position: absolute; */
+
+}
+.part2 .new_left li a {
+    /* display: block; */
+  
+    font-size: 18px;
+    line-height: 48px;
+    color: #435c73;
+}
+
+
+
+
+.new_left li a span:nth-child(2){
+    float: right;
+}
+.part2 .new_left .more {
+    position: absolute;
+    left: 40px;
+    bottom: 0;
+}
+
+.part2 .new_left .more a {
+    display: block;
+    width: 100px;
+    text-align: center;
+    line-height: 32px;
+    color: #aa98ad;
+    font-size: 20px;
+    background-color: #fff;
+    opacity: 1;
+    z-index: 8;
+    border-radius: 10px 10px 0 0;
+ 
+}
+
+
+
+
+
+.part2 .new_right {
+    position: absolute;
+    right: 0;
+    /* top: 300px; */
+    top: 350px;
+    width: 640px;
+    height: 360px;
+    background-color: aqua;
+    border-radius: 30px;
+    overflow: hidden;
+    /* display: none; */
+    opacity: 0;
+
+} 
+.part2 .new_right li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    
+}
+.part2 .new_right li:nth-child(1) {
+
+    display: block;
+    
+}
+.part2 .new_right li a{
+    display: block;
+    
+}
+.part2 .new_right li a img{
+    width: 640px;
+    
+}
+
+.part2 .text_title{
+    position: absolute;
+    top: 720px;
+    right: 0;
+    width: 620px;
+    height: 40px;
+    background-color: rgba(255,255,255,0.6);
+    color: #666666;
+    font-size: 18px;
+    line-height: 40px;
+    padding-left: 20px;
+    border-radius: 10px;
+
+}
+
+.birdis {
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    left: -60px;
+    bottom: 130px;
+    z-index: -1;
+}
+.birdis i {
+    position: absolute;
+    display: block;
+}
+.birdis i:nth-child(1) {
+    top: 200px;
+    left: -40px;
+}
+.birdis i:nth-child(2) {
+    top: 210px;
+    left: 85px;
+}
+.birdis i:nth-child(3) {
+    top: 190px;
+    left: 185px;
+}
+.birdis i:nth-child(4) {
+    top: 105px;
+    left: 290px;
+}
+.birdis i:nth-child(5) {
+    top: 160px;
+    left:450px;
+}
+

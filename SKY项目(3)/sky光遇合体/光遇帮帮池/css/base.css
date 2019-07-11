@@ -1,0 +1,44 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  /* 移动端适配核心点
+        1.不允许网页出现横向滚动条
+        2.页面盛满屏幕，盒子宽度与屏幕一致 100%
+        3.让盒子的内容宽高width/height包含padding与border，避免出现横向滚动条  
+    */
+  box-sizing: border-box;
+}
+body {
+  /* 2.移动端默认字体一般是12px */
+  font-size: 12px;
+}
+li {
+  list-style: none;
+}
+img {
+  vertical-align: middle;
+  /* 图片居中 */
+}
+a {
+  color: #000;
+  /* 取消a标签默认下划线 */
+  text-decoration: none;
+  /* 3.移动端点击a链接出现蓝色背景问题解决 */
+  -webkit-tap-highlight-color: transparent;
+}
+input {
+  border: 0 none;
+  outline-style: none;
+  /*取消内边框*/
+}
+/* 清除浮动，解决margin-top塌陷 */
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.celarfix {
+  zoom: 1;
+}

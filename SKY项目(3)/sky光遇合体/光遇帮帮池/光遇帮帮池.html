@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>光·遇帮帮池 - 希望你在这里愿望成真</title>
+    <link rel="stylesheet" href="./CSS/base.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="./CSS/pop.css">
+    <link rel="stylesheet" href="./光遇帮帮池(1)/css/发光点点.css">
+    <link rel="icon" href="../favicon.ico.png">
+    <script src="./JS/jquery-1.12.4.js"></script>
+    <script src="./rem.js"></script>
+    <style>
+        .footr {
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            z-index: 999;
+        }
+
+        .footr .slideup {
+            background-color: #fff;
+            height: 36px;
+            padding: 0 30px;
+            border-radius: 20px 20px 0 0;
+            font-size: 12px;
+            color: #7a7a7a;
+            line-height: 36px;
+            position: absolute;
+            left: 30px;
+            bottom: 0px;
+
+        }
+
+        .footr .slideup p {
+            padding-right: 14px;
+            background: url('./素材/上箭头.png') no-repeat right;
+
+        }
+
+        .footr .foot-nav img {
+            position: absolute;
+            height: 0;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 登录界面 -->
+    <div class="pop login">
+        <a href="#" class="close"><i></i></a>
+        <div class="tit"></div>
+        <div class="login_con">
+            <div class="login-wrap" id="login" style="width: 320px; height: 257px;">
+                <input type="text" placeholder="请输入手机号码" id="phone">
+                <div class="huadong"><i><img src="./img/右箭头.png" alt=""></i>向右拖动滑块填充拼图</div>
+                <div class="yzm"><input type="text" placeholder="请输入短信验证码"><a href="#">获取验证码</a></div>
+                <a href="#" id="dl">登 录</a>
+                <a href="#" id="wenti">遇到问题?</a><a href="#" id="zhuche">去注册</a>
+            </div>
+        </div>
+    </div>
+    <!-- 活动规则界面 -->
+    <div class="pop poprule">
+        <a href="#" class="close"><i></i></a>
+        <div class="cont">
+            <div class="t2"></div>
+            <p>
+                “想要一个女朋友” <br>
+                “想拥有一段假期” <br>
+                你是否也有一些想要实现的愿望？
+            </p>
+            <p><i class="spc">规则1</i><br>许下心愿，并留下你的微博or抖音账号（名称+账号），说不定就有温暖降临。</p>
+            <p><i class="spc">规则2</i><br>你的愿望倘若被实现了，希望你能实现帮帮池中另一个人的愿望，帮ta实现心愿的时候还请记得@ta，让温暖一直传递下去。</p>
+            <p><i class="spc">规则3</i><br>你可以点亮别人的愿望；获得更多点赞的心愿将更有机会成真。</p>
+            <p>
+                温暖没有明确的定义，却有无数种表达。<br>
+                希望我们星星点点的善意，将成为彼此生命中一处暖光。
+            </p>
+            <p>
+                <i class="spc">许愿格式举例</i><br>
+                温暖的灵魂终将相遇。——微博@Sky光遇<br>
+                想要一个不加班的周末。——抖音skyguangyu@Sky小光
+            </p>
+        </div>
+
+
+    </div>
+
+    <div id="container">
+        <div class="shoneStar">
+            <div class="yincang">
+                <div class="da">
+                    <div class="xiao">
+                        <ul class="ul1"></ul>
+                    </div>
+                    <div class="xiao">
+                        <ul class="ul2"></ul>
+                    </div>
+                    <div class="xiao">
+                        <ul class="ul3"></ul>
+                    </div>
+                    <div class="xiao">
+                        <ul class="ul4"></ul>
+                    </div>
+                    <div class="xiao">
+                        <ul class="ul5"></ul>
+                    </div>
+                    <div class="xiao">
+                        <ul class="ul6"></ul>
+                    </div>
+                </div>
+            </div>
+            <div id="prve"></div>
+            <div id="next"></div>
+            <div class="cut">
+                <ul>
+                    <li>最热</li>
+                    <li>最新</li>
+                </ul>
+                <div>
+                    <i></i>换一批
+                </div>
+            </div>
+
+        </div>
+        <div class="zhongjian">
+            <img src="./img/cd_d8d7e9a.png" alt="">
+            <a href="#">
+                <div class="btn-rule"></div>
+            </a>
+        </div>
+        <div class="topBar">
+            <div class="topBar-main">
+                <div class="img"><img src="./img/顶部栏网易其他游戏.png" alt=""></div>
+                <a href="#">
+                    <i></i>游戏全目录
+                </a>
+            </div>
+            <div class="topBar-log">
+                <a href="#" id="log"><img src="./img/logo_b5525b7.png" alt=""></a>
+            </div>
+            <div class="fade">领取网易严选宝箱</div>
+        </div>
+        <!-- <div class="topBar_menu">
+                <img src="./img/顶部栏网易其他游戏.png" alt="">
+            </div> -->
+        <div class="content">
+            <div class="log">
+                <a href="#"><img src="./img/100.webp" alt=""></a>
+                <img src="./img/line-2_5d22039.png" alt="">
+                <a href="#"><img src="./img/96.webp" alt=""></a>
+            </div>
+            <ul class="ctrls">
+                <li class="link-item">
+                    <a href="#">回到官网</a>
+                </li>
+                <div class="drop">
+                    <p>“光·遇帮帮池”是《Sky光·遇》送给所有温暖的人的一份礼物，希望在这里，所有的愿望都能够被关注，所有的人都能获得一份温暖。
+                        <br>
+                        《Sky光·遇》是《风之旅人》制作人陈星汉历时七年新作。在其中，你将开启一场拥抱自由和温暖的云端之旅</p>
+                </div>
+                <li class="music">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </li>
+                <li class="wb">
+                    <a href="#"><img src="./img/微博.png" alt="">
+                        <div class="qr_code">
+                            <img src="./img/qrcode_wb_0ef3c9f.jpg" alt="微博">
+                            <p>官方微博</p>
+                            <p>@Sky光遇</p>
+                        </div>
+                    </a>
+
+                </li>
+                <li class="wx">
+                    <a href="#"><img src="./img/微信.png" alt=""></a>
+                    <div class="qr_code">
+                        <img src="./img/qrcode_wx_d7acdec.jpg" alt="微信">
+                        <p>官方公众号</p>
+                        <p>@Sky光遇</p>
+                    </div>
+                </li>
+                <li class="QQ"><a href="#"><img src="./img/QQ.png" alt=""></a>
+                    <div class="qr_code">
+                        <img src="./img/qrcode_qq2_7459bde.png" alt="微信">
+                        <p>官方QQ群</p>
+                        <p>680537048</p>
+                    </div>
+                </li>
+                <li class="dashen"><a href="#"><img src="./img/大神.png" alt=""></a>
+                    <div class="qr_code">
+                        <img src="./img/qrcode_dashen_a1feb2e.png" alt="微信">
+
+                    </div>
+                </li>
+            </ul>
+
+            <div class="light"></div>
+            <div class="section">
+                <div class="t"></div>
+                <div class="btn-xy"></div>
+                <!-- 许愿池 -->
+                <div class="look">
+                    <p>-查看许愿池-</p>
+                    <div class="arrow"></div>
+                </div>
+            </div>
+        </div>
+
+        <img src="./img/start2_e349536.png" alt="" class="start">
+        <img src="./img/start2_e349536.png" alt="" class="start">
+        <img src="./img/start2_e349536.png" alt="" class="start">
+        <img src="./img/start2_e349536.png" alt="" class="start">
+        <img src="./img/start2_e349536.png" alt="" class="start">
+        <img src="./img/start2_e349536.png" alt="" class="start">
+        <img src="./img/start1_e349536.png" alt="" class="start">
+        <img src="./img/start1_fbc9722.png" alt="" class="start">
+        <img src="./img/start1_fbc9722.png" alt="" class="start">
+        <img src="./img/start1_fbc9722.png" alt="" class="start">
+        <img src="./img/start1_fbc9722.png" alt="" class="start">
+    </div>
+    <!-- controls 显示控件 -->
+    <audio src="./img/bgm.mp3" autoplay loop></audio>
+
+
+
+    <div class="footr">
+        <a href="#" class="slideup">
+            <p>网易公司版权所有 ©1997-2019</p>
+        </a>
+        <div class="foot-nav">
+            <img src="./img/底部通栏.png" alt="">
+        </div>
+    </div>
+
+    <!-- 发光圆点 -->
+
+</body>
+<script src="./光遇帮帮池(1)/js/index.js"></script>
+<script>
+    var container = document.getElementById('container');
+    var start = document.querySelectorAll('.start');
+    var music = document.querySelector('.ctrls .music');
+    var bgm = document.querySelector('embed')
+    var audio = document.querySelector('audio')
+
+
+
+    //播放音乐
+    $(function () {
+        audio.play();
+    })
+
+    music.onclick = function () {
+        if ($('.ctrls .music i').css('animationPlayState') == 'paused') {
+            $('.ctrls .music i').css('animationPlayState', 'running')
+            audio.play();
+
+        } else {
+            $('.ctrls .music i').css('animationPlayState', 'paused')
+            audio.pause();
+
+        }
+    }
+
+    //适配屏幕
+    var h = document.body.clientHeight;
+    // var w = document.body.clientWidth;
+
+  document.body.style.height = h + 'px';
+    // container.style.width = w + 'px';
+
+
+    $('.ctrls .link-item a').mouseenter(function () {
+        $('.ctrls .drop').show()
+        $('.ctrls .link-item a').css('text-decoration', 'underline');
+    })
+    $('.ctrls .link-item a').mouseleave(function () {
+        $('.ctrls .drop').hide()
+        $('.ctrls .link-item a').css('text-decoration', 'none');
+    })
+    $('.wb>a').mouseenter(function () {
+        $('.wb .qr_code').css('display', 'block')
+    })
+    $('.wb').mouseleave(function () {
+        $('.wb .qr_code').css('display', 'none')
+    })
+
+    $('.wx>a').mouseenter(function () {
+        $('.wx .qr_code').css('display', 'block')
+    })
+    $('.wx').mouseleave(function () {
+        $('.wx .qr_code').css('display', 'none')
+    })
+    $('.QQ>a').mouseenter(function () {
+        $('.QQ .qr_code').css('display', 'block')
+    })
+    $('.QQ').mouseleave(function () {
+        $('.QQ .qr_code').css('display', 'none')
+    })
+    $('.dashen>a').mouseenter(function () {
+        $('.dashen .qr_code').css('display', 'block')
+    })
+    $('.dashen').mouseleave(function () {
+        $('.dashen .qr_code').css('display', 'none')
+    })
+    //随机生成星星位置
+    setTimeout(function () {
+
+        for (var i = 0; i < start.length; i++) {
+
+            var maxX = container.offsetWidth / start[i].width;
+            // 生成随机x（水平方向的下标）
+            var x = parseInt(Math.random() * maxX);
+
+            var maxY = (container.offsetHeight / 2) / start[i].height;
+            // 生成随机垂直方向的下标
+            var y = parseInt(Math.random() * maxY);
+
+            start[i].style.left = x * start[i].width + "px";
+            start[i].style.top = y * start[i].height + "px";
+            var num = Math.random() * 2;
+            start[i].style.animationDuration = (num + 0.5) + 's';
+        }
+    })
+
+    //pop显示与隐藏
+    $('.section .btn-xy').click(function () {
+        $('.login').fadeIn();
+        $('#container').css('opacity', 0.1)
+        $('body').css('backgroundColor', '#000')
+    }
+    )
+    $('.login a').click(function () {
+        $('.login').fadeOut();
+        $('#container').css('opacity', 1)
+    })
+
+    $('.zhongjian .btn-rule').click(function () {
+        $('.poprule').fadeIn();
+        $('#container').css('opacity', 0.1)
+        $('body').css('backgroundColor', '#000')
+    })
+    $('.poprule a').click(function () {
+        $('.poprule').fadeOut();
+        $('#container').css('opacity', 1)
+    })
+
+
+    // 顶部栏下拉
+    $('.topBar .topBar-main a').mouseleave(function () {
+
+        $('.topBar .topBar-main img').stop(true).animate({
+            height: 0,
+        }, 300)
+    });
+    $('.topBar .topBar-main a').mouseenter(function () {
+
+        $('.topBar .topBar-main img').stop(true).animate({
+            height: 500,
+        }, 300)
+    });
+    // 底部移入移出效果
+    $('.footr').mouseenter(function () {
+
+        $('.foot-nav img').stop(true).animate({
+            height: 73,
+        })
+
+        $('.footr .slideup').stop(true).animate({
+
+            bottom: 73,
+        })
+
+        $('.footr .slideup p').css('background', 'url(./img/上箭头.png) no-repeat  right')
+    })
+
+
+    $('.footr').mouseleave(function () {
+
+        $('.foot-nav img').stop(true).animate({
+            height: 0,
+
+        })
+
+        $('.footr .slideup').stop(true).animate({
+
+            bottom: 0,
+        })
+
+        $('.footr .slideup p').css('background', 'url(./img/下箭头.png) no-repeat  right');
+    })
+    //鼠标滚动事件
+
+
+
+    document.onwheel = function (e) {
+
+        switch (e.wheelDelta) {
+            case -120:
+                $('.section').animate({
+                    marginTop: -20,
+                    opacity: 0,
+                }, 1500, function () {
+                    $('.shoneStar').animate({
+                        marginTop: -20,
+                        opacity: 1
+                    }, 1000)
+                    $('.shoneStar').css({
+                        'display': 'block',
+                        'z-index': 10,
+                    })
+                });
+                break;
+            case 120:
+                $('.shoneStar').animate({
+                    marginTop: 20,
+                    opacity: 0
+                }, 1000, function () {
+                    $('.shoneStar').css({
+                        'display': 'none',
+                        'z-index': 0,
+                    });
+                    $('.section').animate({
+                        marginTop: 60,
+                        opacity: 1,
+                    }, 1000)
+                });
+                break
+        }
+    }
+    $('.look').click(function () {
+        $('.section').animate({
+            marginTop: -20,
+            opacity: 0,
+        }, 1500, function () {
+            $('.shoneStar').animate({
+                marginTop: -20,
+                opacity: 1
+            }, 1000)
+            $('.shoneStar').css({
+                'display': 'block',
+                'z-index': 10,
+            })
+        });
+    })
+</script>
+
+</html>

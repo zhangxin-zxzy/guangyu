@@ -1,0 +1,464 @@
+/* 初始化代码
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+ul,
+li,
+input,
+img,
+a,
+i,
+p,
+em,
+strong {
+	margin: 0;
+	padding: 0;
+
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+
+li {
+	list-style: none;
+}
+
+input {
+	border: 0 none;
+	outline: 0 none;
+}
+
+img {
+	border: 0 none;
+	vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-weight: normal;
+}
+
+em,
+i {
+	font-style: normal;
+} */
+
+/* body {
+	font: 12px/100% "方正悠黑";
+    background-color: white;
+    
+    overflow-x:hidden;
+    overflow-y:hidden;
+} */
+
+/* .w {
+	width: 1200px;
+	margin: 0 auto;
+} */
+
+/* .clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+} */
+
+/* .clearfix {
+	*zoom: 1;
+} */
+/* html, */
+/* body { */
+ /* width: 100%; */
+  /* position: relative; */
+  /* height: 100%; */
+/* } */
+
+/* body {
+
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  
+
+} */
+/* 鸟 */
+/* .birds_feature {
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    margin-left: -250px;
+    display: none;
+    overflow: hidden;
+
+}  
+ .birds_feature .birds_1 {
+    position: absolute;
+    top: 90px;
+    left: 0px;
+    z-index: 2;
+  } 
+  .birds_feature .birds_2 {
+    position: absolute;
+    top: 190px;
+    left: 52px;
+    z-index: 2;
+
+  } .birds_feature .birds_3 {
+    position: absolute;
+    top: 70px;
+    left: 250px;
+    z-index: 2;
+
+  } .birds_feature .birds_4 {
+    position: absolute;
+    top: 195px;
+    left: 492px;
+    z-index: 2;
+
+  } .birds_feature .birds_5 {
+    position: absolute;
+    top: 286px;
+    left: 644px;
+    z-index: 2;
+
+  } */
+
+
+
+
+
+/* 图片大小 */
+
+/* .part3 {
+    display: none;
+    z-index: 150;
+} */
+
+/* .swiper-container { */
+    /* width: 100%; */
+    /* position: absolute; */
+    /* left: 0; */
+    /* padding: 0; */
+    /* z-index: 2000; */
+    /* margin-top: -150px; */
+    /* display: none;
+    
+    z-index: 2000; */
+/* } */
+
+
+/* .swiper-wrapper{ */
+     /* margin-top: -30px; */
+     /* z-index: 7000; */
+/* } */
+.swiper-container img {
+    
+  margin-top: 200px;
+  width: 800px;
+  height: 500px;
+  border-radius: 30px;
+  z-index: 150;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* background: #fff; */
+  /* 垂直居中幻灯片文本 */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  /* 速度 */
+  transition: all 150ms;
+}
+
+.swiper-slide:not(.swiper-slide-active) {
+  transform: scale(0.8);
+  z-index: 20;
+  margin-top: 30px;
+}
+
+
+
+.swiper-container {
+    margin: -300px auto 0 ;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    /* z-index: 1; */
+    /* display: none; */
+    opacity: 0;
+    
+    /* z-index: 2000; */
+}
+.part3 .centre {
+    position: absolute;
+    top:100px;
+    left: 870px;
+    left: 50%;
+    margin-left: -150px;
+   
+    z-index: 20;
+    opacity: 0;
+}
+
+
+
+/* 顶部 */
+/* .topbar{
+    height: 56px;
+    width: 100%;
+    border: 1px solid #ccc;
+    position: relative;
+} */
+/* <!-- 游戏目录 --> */
+
+/* .catalog{
+ position: relative ;
+    display: block ;
+   left: 0;
+   height:55px ;
+   width: 179px;
+    background-color:  #cf1132;
+    line-height: 55px;
+    text-align: center;
+} */
+/* .catalog a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.catalog i {
+    position: absolute ;
+    left: 25px;
+    top: 22px ;
+    display: inline-block;
+    background:url('./素材/字体图片.png') no-repeat -90px -306px;
+    width: 25px;
+    height: 11px;
+
+}
+.catalog span{
+     color: #fff;
+} */
+/* .login{
+    width: 133px;
+    height: 44px;
+    display: inline-block;
+    margin-top: 6px;  
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    top:0px;
+    background:url('./素材/logo.png') no-repeat ;
+
+
+} */
+/* .login a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.top-ad{
+    position: absolute;
+    right: 0px;
+    top: 0;
+    display: block;
+    width: 138px;
+    height: 54px;
+    line-height: 54px;
+    text-align: center ;
+    
+    overflow: hidden;
+    z-index: 9;
+    border-left: 1px solid #dadada;
+} */
+/* .top-ad a{
+    display: block;
+    width:100% ;
+    height: 100%;
+    color: #000;
+} */
+/* 光遇logo */
+/* .logoShow .img1{
+    position: absolute;
+    left: 40px;
+    top: 82px;
+    display: inline-block;
+    
+}
+.logoShow .img2 {
+    position: absolute;
+    left: 150px;
+    top: 82px;
+    display: inline-block;
+}
+.log.logoShow .img3 {
+    position: absolute;
+    left: 260px;
+    top: 82px;
+    display: inline-block;
+} */
+/* 文字 */
+/* .logoShow p {
+    
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    left: 310px;
+    top: 102px;
+    display: block;
+}
+.logoShow span {
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    left: 310px;
+    top: 142px;
+}  */
+/* .bg{ */
+    /* width: 1200px; */
+    /* height: 100%; */
+    /* position: absolute;
+    left: 50%;
+    top: 50%; */
+
+/* } */
+/* 大背景图 */
+/* .bg .bigbigpicture{
+    width: 100%;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    display: block;
+    背景图片
+    background: url('./素材/背景1.jpg') no-repeat;
+} */
+/* 中间文字图片 */
+
+/* 左边树 */
+/* .bg .left {
+    position: absolute;
+    top:58px;
+    left: 0;
+    z-index: 2;
+}
+.left img{
+    width: 250px;
+} */
+/* 右边树 */
+/* .bg .right {
+    position: absolute;
+    top:58px;
+    right: 0;
+    z-index: 2;
+}
+.right img{
+    width: 150px;
+} */
+
+
+/* 
+.logoShow .img1{
+    position: absolute;
+    left: 40px;
+    top: 82px;
+    display: inline-block;
+    z-index: 3;
+}
+.logoShow .img2 {
+    position: absolute;
+    left: 165px;
+    top: 82px;
+    display: inline-block;
+    z-index: 3;
+}
+.logoShow .img3 {
+    position: absolute;
+    left: 260px;
+    top: 82px;
+    display: inline-block;
+    z-index: 3;
+} */
+
+/* 光遇边上的文字 */
+/* .logoShow p {
+    
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    left: 310px;
+    top: 102px;
+    display: block;
+    z-index: 3;
+}
+.logoShow span {
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    left: 310px;
+    top: 142px;
+    z-index: 3;
+} */
+/* 字体图片 */
+/* .logoShow .font .font1{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    display: inline-block;
+    right: 282px;
+    top: 82px;
+    z-index: 3;
+}
+.logoShow .font .font2{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    display: inline-block;
+    right: 220px;
+    top: 82px;
+    z-index: 3;
+}
+.logoShow .font .font3{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    display: inline-block;
+    right: 160px;
+    top: 82px;
+    z-index: 3;
+    
+}
+.logoShow .font .font4{
+    width:45px;
+    height: 45px;
+    position: absolute;
+    display: inline-block;
+    right: 104px;
+    top: 84px;
+    z-index: 3;
+} */

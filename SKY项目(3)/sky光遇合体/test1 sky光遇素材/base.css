@@ -1,0 +1,59 @@
+body,
+div,
+span,
+a,
+input,
+strong,
+em,
+del,
+ins,
+i,
+img,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    /* color: #000; */
+}
+body{
+    font-size: .062565rem;
+    line-height: 1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+ input {
+     outline: none;
+     
+ }
+img {
+    border: none;
+    vertical-align:middle;
+    background-color: #fff;
+}
+li {
+    list-style: none;
+    
+} 
+.before{
+    clear: both;
+    display: block;
+    height: 0;
+}
+.w{
+    width: 4.900938rem;
+    margin: 0 auto;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+}
